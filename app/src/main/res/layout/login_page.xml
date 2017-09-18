@@ -4,31 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/starrybg1"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" />
 
     <ImageView
-        android:id="@+id/calPicTop"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        android:scaleType="centerCrop"
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/applogo"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logincalendarone" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.501"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <ImageView
-        android:id="@+id/calPicBot"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingBottom="25dp"
+        android:text="Username"
+        android:textAlignment="viewStart"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/logincalendartwo" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingBottom="25dp"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintLeft_toLeftOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="307dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="307dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Switch"
+        app:layout_constraintLeft_toLeftOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:checked="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="21dp"
+        android:text="Remember me"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="21dp"
+        android:text="Forgot Password?"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:clickable="true"
+        android:layout_marginEnd="32dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mycorner"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="489dp" />
+
 </android.support.constraint.ConstraintLayout>
