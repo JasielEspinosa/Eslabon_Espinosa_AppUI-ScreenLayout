@@ -2,9 +2,49 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_addAgenda"
+        android:id="@+id/nav_sync"
         android:icon="@mipmap/ic_view_agenda_black_24dp"
-        android:title="My Account" />
+        android:title="Sync" />
+
+    <item
+        android:id="@+id/nav_calView"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Calendar View" />
+
+    <item
+        android:id="@+id/nav_viewAgendas"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="View Agendas" />
+
+    <item
+        android:id="@+id/nav_createCateg"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Create Category" />
+
+    <item
+        android:id="@+id/nav_manContacts"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Manage Contacts" />
+
+    <item
+        android:id="@+id/nav_createEvent"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Create Event" />
+
+    <item
+        android:id="@+id/nav_createMeeting"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Create Meeting" />
+
+    <item
+        android:id="@+id/nav_createTask"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Create Task" />
+
+    <item
+        android:id="@+id/nav_deleteAgenda"
+        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:title="Delete Agendas" />
 
     <item
         android:id="@+id/nav_settings"
