@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/nav_sync"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_sync_black_24dp"
         android:title="Sync" />
 
     <item
         android:id="@+id/nav_calView"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_perm_contact_calendar_black_24dp"
         android:title="Calendar View" />
 
     <item
@@ -18,32 +18,32 @@
 
     <item
         android:id="@+id/nav_createCateg"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_create_black_24dp"
         android:title="Create Category" />
 
     <item
         android:id="@+id/nav_manContacts"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_contacts_black_24dp"
         android:title="Manage Contacts" />
 
     <item
         android:id="@+id/nav_createEvent"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_create_black_24dp"
         android:title="Create Event" />
 
     <item
         android:id="@+id/nav_createMeeting"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_create_black_24dp"
         android:title="Create Meeting" />
 
     <item
         android:id="@+id/nav_createTask"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_create_black_24dp"
         android:title="Create Task" />
 
     <item
         android:id="@+id/nav_deleteAgenda"
-        android:icon="@mipmap/ic_view_agenda_black_24dp"
+        android:icon="@mipmap/ic_delete_black_24dp"
         android:title="Delete Agendas" />
 
     <item
