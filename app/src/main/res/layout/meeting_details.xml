@@ -1,16 +1,15 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#0c090a">
+    android:background="#0c090a"
+    android:orientation="vertical">
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/cancelButton"
@@ -18,9 +17,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/meeting_details_btn"
             android:text="Cancel"
-            android:textColor="#000"
-            android:background="@drawable/meeting_details_btn"/>
+            android:textColor="#000" />
 
         <Button
             android:id="@+id/saveButton"
@@ -31,6 +30,7 @@
             android:background="@drawable/meeting_details_btn"
             android:text="Next"
             android:textColor="#000" />
+
     </LinearLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -38,79 +38,236 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/nameLabel"
+            android:id="@+id/lblName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:text="Name:"
             android:textColor="#FFF"
             android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/nameInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputName"
             app:layout_constraintLeft_toLeftOf="parent" />
 
         <EditText
-            android:id="@+id/nameInput"
+            android:id="@+id/inputName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#FFF"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintHorizontal_bias="0.245"
-            app:layout_constraintLeft_toRightOf="@+id/nameLabel"
+            app:layout_constraintLeft_toRightOf="@+id/lblName"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/descInput"
+        <TextView
+            android:id="@+id/lblSubject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="51dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FFF"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+            android:layout_marginLeft="32dp"
+            android:text="Subject:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputSubject"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <EditText
-            android:id="@+id/placeInput"
+            android:id="@+id/inputSubject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#FFF"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/descInput"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descInput" />
+            app:layout_constraintTop_toBottomOf="@+id/inputName" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/lblDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:text="Description:"
             android:textColor="#FFF"
             android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/descInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputDescription"
             app:layout_constraintLeft_toLeftOf="parent" />
 
+        <EditText
+            android:id="@+id/inputDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputSubject"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputSubject" />
+
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/lblAttendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Attendees:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputAttendees"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputAttendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputDescription"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputDescription" />
+
+        <TextView
+            android:id="@+id/lblPlace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:text="Place:"
             android:textColor="#FFF"
             android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/placeInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputPlace"
             app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputAttendees"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputAttendees" />
+
+        <TextView
+            android:id="@+id/lblDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Date/Time:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTime"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputPlace"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputPlace" />
+
+        <TextView
+            android:id="@+id/lblRepeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Repeats:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputRepeats"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputRepeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputDateTime"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputDateTime" />
+
+        <TextView
+            android:id="@+id/lblPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Priority:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputPriority"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputRepeats"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputRepeats" />
+
+        <TextView
+            android:id="@+id/lblReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Reminder:"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputReminder"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/inputReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/inputPriority"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputPriority" />
+
     </android.support.constraint.ConstraintLayout>
 
 </LinearLayout>
