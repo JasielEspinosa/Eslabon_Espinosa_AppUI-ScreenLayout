@@ -106,7 +106,7 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="#FFF"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="@+id/inputSubject"
             app:layout_constraintRight_toRightOf="parent"
