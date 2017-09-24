@@ -1,5 +1,5 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:background="@color/colorPrimary">
@@ -12,8 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_margin="20dp"
         android:padding="15dp"
-        android:text="Header Nav"
+        android:text="@string/headerNav"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
-
 </RelativeLayout>

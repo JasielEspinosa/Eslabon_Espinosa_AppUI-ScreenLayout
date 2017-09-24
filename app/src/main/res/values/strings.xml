@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Integrated Calendar System</string>
+    <string name="app_name">ICS</string>
 
     <!---Login Texts-->
     <string name="username">Username</string>
@@ -14,6 +14,7 @@
     <!---Login Descriptions-->
     <string name="image01_temp">image</string>
 
+    <string name="headerNav">Header Nav</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
