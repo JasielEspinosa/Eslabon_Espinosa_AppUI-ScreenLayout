@@ -59,6 +59,15 @@
             tools:layout_editor_absoluteY="41dp" />
 
         <AutoCompleteTextView
+            android:id="@+id/inputCategory"
+            android:labelFor="@+id/inputCategory"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="@string/category"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <AutoCompleteTextView
             android:id="@+id/inputDescription"
             android:labelFor="@+id/inputDescription"
             android:layout_width="match_parent"
@@ -68,11 +77,11 @@
             tools:layout_editor_absoluteY="41dp" />
 
         <AutoCompleteTextView
-            android:id="@+id/inputAttendees"
-            android:labelFor="@+id/inputAttendees"
+            android:id="@+id/inputInvite"
+            android:labelFor="@+id/inputInvite"
             android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:text="@string/attendees"
+            android:text="@string/invite"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="41dp" />
 
@@ -81,7 +90,7 @@
             android:labelFor="@+id/inputPlace"
             android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:text="@string/placeOfMeeting"
+            android:text="@string/location"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="41dp" />
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ICS</string>
 
-    <!---Login Texts-->
+    <!--Login Texts-->
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="switchCal">Switch</string>
@@ -11,7 +11,7 @@
     <string name="noAcc">Don\'t have an account?</string>
     <string name="signUp">Sign Up</string>
 
-    <!---Login Descriptions-->
+    <!--Login Descriptions-->
     <string name="image01_temp">image</string>
 
     <string name="headerNav">Header Nav</string>
@@ -22,7 +22,7 @@
     <string name="cancel">Cancel</string>
     <string name="next">Next</string>
 
-    <!---Create Events-->
+    <!--Create Meeting Texts-->
     <string name="title">Title</string>
     <string name="subject">Subject</string>
     <string name="description">Description</string>
@@ -36,12 +36,22 @@
     <string name="priority">Priority</string>
     <string name="reminderDateTime">Reminder Date/Time</string>
 
-    <!---NavMenu-->
+    <!--Create Meeting Texts-->
+    <string name="eventName">Name of Event</string>
+    <string name="placeOfEvent">Place of Event</string>
+
+    <!--Create Task Texts-->
+    <string name="category">Category</string>
+    <string name="invite">Invite Person/People</string>
+    <string name="location">Location</string>
+
+    <!--Navigation Menu Texts-->
     <string name="calendarView">Calendar View</string>
     <string name="createAgenda">Create Agenda</string>
     <string name="viewAgendas">View Agendas</string>
     <string name="sync">Sync</string>
     <string name="manageContacts">Manage Contacts</string>
+    <string name="manageLocations">Manage Locations</string>
     <string name="settings">Settings</string>
     <string name="logout">Logout</string>
 
