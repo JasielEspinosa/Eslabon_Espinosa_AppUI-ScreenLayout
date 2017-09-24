@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E2F7A8"
@@ -33,268 +34,109 @@
 
     </LinearLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/lblName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Title:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputName"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="25dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.333"
-            app:layout_constraintLeft_toRightOf="@+id/lblName"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Title:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblSubject"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Subject:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputSubject"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputSubject"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputName" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Subject:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Description:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputDescription"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputSubject"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputSubject" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Description:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblAttendees"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Attendees:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputAttendees"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputAttendees"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputDescription"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDescription" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Attendees:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblPlace"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Place:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputPlace"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputPlace"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputAttendees"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputAttendees" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Place of Meeting:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblDateTimeStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Start Date/Time:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTimeStart"
-            app:layout_constraintLeft_toLeftOf="parent" />
+        <AutoCompleteTextView
+            android:id="@+id/inputStartDate"
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Start Date:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <EditText
-            android:id="@+id/inputDateTimeStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputPlace"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputPlace" />
+        <AutoCompleteTextView
+            android:id="@+id/inputStartTime"
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Start Time:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblDateTimeEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Date/Time:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTimeEnd"
-            app:layout_constraintLeft_toLeftOf="parent" />
+        <AutoCompleteTextView
+            android:id="@+id/inputEndDate"
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="End Date:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <EditText
-            android:id="@+id/inputDateTimeEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputDateTimeStart"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDateTimeStart" />
+        <AutoCompleteTextView
+            android:id="@+id/inputEndTime"
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="End Time:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblRepeats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Repeats:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputRepeats"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputRepeats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputDateTimeEnd"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDateTimeEnd" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Repeats:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblPriority"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Priority:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputPriority"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputPriority"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputRepeats"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputRepeats" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Priority:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-        <TextView
-            android:id="@+id/lblReminder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Reminder:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputReminder"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputReminder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputPriority"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputPriority" />
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            android:text="Reminder Date/Time:"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
 
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 
 </LinearLayout>
 
