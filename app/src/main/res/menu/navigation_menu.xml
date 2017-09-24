@@ -2,18 +2,38 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_addAgenda"
+        android:id="@+id/nav_calView"
+        android:icon="@mipmap/ic_perm_contact_calendar_black_24dp"
+        android:title="@string/nav_calView" />
+
+    <item
+        android:id="@+id/nav_createAgenda"
+        android:icon="@mipmap/ic_create_black_24dp"
+        android:title="@string/nav_createAgenda" />
+
+    <item
+        android:id="@+id/nav_viewAgendas"
         android:icon="@mipmap/ic_view_agenda_black_24dp"
-        android:title="My Account" />
+        android:title="@string/nav_viewAgenda" />
+
+    <item
+        android:id="@+id/nav_sync"
+        android:icon="@mipmap/ic_sync_black_24dp"
+        android:title="@string/nav_sync" />
+
+    <item
+        android:id="@+id/nav_manageContacts"
+        android:icon="@mipmap/ic_contacts_black_24dp"
+        android:title="@string/nav_manageContacts" />
 
     <item
         android:id="@+id/nav_settings"
         android:icon="@mipmap/ic_settings_black_24dp"
-        android:title="Settings" />
+        android:title="@string/nav_settings" />
 
     <item
         android:id="@+id/nav_logout"
         android:icon="@mipmap/ic_launcher_round"
-        android:title="Logout" />
+        android:title="@string/nav_logout" />
 
 </menu>

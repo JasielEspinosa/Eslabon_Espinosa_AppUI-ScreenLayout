@@ -2,4 +2,12 @@
     <string name="app_name">Integrated Calendar System</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="nav_calView">Calendar View</string>
+    <string name="nav_createAgenda">Create Agenda</string>
+    <string name="nav_viewAgenda">View Agendas</string>
+    <string name="nav_sync">Sync</string>
+    <string name="nav_manageContacts">Manage Contacts</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_logout">Logout</string>
 </resources>
