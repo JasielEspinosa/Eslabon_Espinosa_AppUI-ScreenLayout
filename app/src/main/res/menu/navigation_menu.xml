@@ -22,11 +22,6 @@
         android:title="Sync" />
 
     <item
-        android:id="@+id/nav_createCateg"
-        android:icon="@mipmap/ic_create_black_24dp"
-        android:title="Create Category" />
-
-    <item
         android:id="@+id/nav_manContacts"
         android:icon="@mipmap/ic_contacts_black_24dp"
         android:title="Manage Contacts" />

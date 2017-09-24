@@ -165,18 +165,18 @@
             app:layout_constraintTop_toBottomOf="@+id/inputAttendees" />
 
         <TextView
-            android:id="@+id/lblDateTimeStart"
+            android:id="@+id/lblDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
-            android:text="Start Date/Time:"
+            android:text="Date/Time:"
             android:textColor="#000"
             android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTimeStart"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTime"
             app:layout_constraintLeft_toLeftOf="parent" />
 
         <EditText
-            android:id="@+id/inputDateTimeStart"
+            android:id="@+id/inputDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
@@ -189,32 +189,6 @@
             app:layout_constraintLeft_toLeftOf="@+id/inputPlace"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputPlace" />
-
-        <TextView
-            android:id="@+id/lblDateTimeEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:text="Date/Time:"
-            android:textColor="#000"
-            android:textStyle="bold"
-            app:layout_constraintBaseline_toBaselineOf="@+id/inputDateTimeEnd"
-            app:layout_constraintLeft_toLeftOf="parent" />
-
-        <EditText
-            android:id="@+id/inputDateTimeEnd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#000"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputDateTimeStart"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDateTimeStart" />
 
         <TextView
             android:id="@+id/lblRepeats"
@@ -238,9 +212,9 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/inputDateTimeEnd"
+            app:layout_constraintLeft_toLeftOf="@+id/inputDateTime"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputDateTimeEnd" />
+            app:layout_constraintTop_toBottomOf="@+id/inputDateTime" />
 
         <TextView
             android:id="@+id/lblPriority"
