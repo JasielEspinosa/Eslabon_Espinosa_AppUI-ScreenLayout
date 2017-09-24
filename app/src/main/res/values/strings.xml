@@ -1,13 +1,48 @@
 <resources>
-    <string name="app_name">Sample</string>
+    <string name="app_name">Integrated Calendar System</string>
+
+    <!---Login Texts-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="switchCal">Switch</string>
+    <string name="rememberMe">Remember me</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="signIn">Sign In</string>
+    <string name="noAcc">Don\'t have an account?</string>
+    <string name="signUp">Sign Up</string>
+
+    <!---Login Descriptions-->
+    <string name="image01_temp">image</string>
+
+
     <string name="open">Open</string>
     <string name="close">Close</string>
 
-    <string name="nav_calView">Calendar View</string>
-    <string name="nav_createAgenda">Create Agenda</string>
-    <string name="nav_viewAgenda">View Agendas</string>
-    <string name="nav_sync">Sync</string>
-    <string name="nav_manageContacts">Manage Contacts</string>
-    <string name="nav_settings">Settings</string>
-    <string name="nav_logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+
+    <!---Create Events-->
+    <string name="title">Title</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="attendees">Attendees</string>
+    <string name="placeOfMeeting">Place of Meeting</string>
+    <string name="startDate">Start Date</string>
+    <string name="startTime">Start Time</string>
+    <string name="endDate">End Date</string>
+    <string name="endTime">End Time</string>
+    <string name="repeats">Repeats</string>
+    <string name="priority">Priority</string>
+    <string name="reminderDateTime">Reminder Date/Time</string>
+
+    <!---NavMenu-->
+    <string name="calendarView">Calendar View</string>
+    <string name="createAgenda">Create Agenda</string>
+    <string name="viewAgendas">View Agendas</string>
+    <string name="sync">Sync</string>
+    <string name="manageContacts">Manage Contacts</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+
 </resources>
